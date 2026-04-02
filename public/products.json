@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes with AI assistance and ATS optimization.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF",
+      "AI content suggestions"
+    ],
+    "icon": "📝"
+  },
+  {
+    "id": 2,
+    "name": "Portfolio Generator",
+    "description": "Build stunning developer portfolios in minutes.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Custom domains",
+      "Responsive design",
+      "SEO optimized",
+      "Drag & drop builder"
+    ],
+    "icon": "🌐"
+  },
+  {
+    "id": 3,
+    "name": "AI Content Writer",
+    "description": "Generate blogs, captions, and marketing content instantly.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Blog generation",
+      "Social media captions",
+      "Multi-language support",
+      "Tone customization"
+    ],
+    "icon": "✍️"
+  },
+  {
+    "id": 4,
+    "name": "Design Toolkit",
+    "description": "Access premium UI kits, icons, and design assets.",
+    "price": 99,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "500+ UI components",
+      "Figma files",
+      "Icon packs",
+      "Regular updates"
+    ],
+    "icon": "🎨"
+  },
+  {
+    "id": 5,
+    "name": "Code Snippet Library",
+    "description": "Save and reuse useful code snippets efficiently.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Cloud sync",
+      "Syntax highlighting",
+      "Team sharing",
+      "Search functionality"
+    ],
+    "icon": "💻"
+  },
+  {
+    "id": 6,
+    "name": "Task Manager Pro",
+    "description": "Organize your workflow and boost productivity.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Kanban boards",
+      "Reminders",
+      "Collaboration tools",
+      "Analytics dashboard"
+    ],
+    "icon": "📋"
+  },
+  {
+    "id": 7,
+    "name": "Website Analytics",
+    "description": "Track and analyze website performance in real-time.",
+    "price": 59,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Real-time tracking",
+      "User insights",
+      "Traffic reports",
+      "Custom dashboards"
+    ],
+    "icon": "📊"
+  },
+  {
+    "id": 8,
+    "name": "Email Marketing Suite",
+    "description": "Create and manage email campaigns بسهولة.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": [
+      "Email templates",
+      "Automation workflows",
+      "Subscriber management",
+      "Performance tracking"
+    ],
+    "icon": "📧"
+  }
+]
