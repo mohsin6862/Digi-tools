@@ -5,6 +5,8 @@ import { ToastContainer } from 'react-toastify'
 import Showcase from './Components/Showcase/Showcase'
 import DigitalTools from './Components/DigitalTools/DigitalTools'
 import { Suspense } from 'react'
+import GetStarted from './Components/GetStarted/GetStarted'
+import Pricing from './Components/Pricing/Pricing'
 
 function App() {
 const productsPromise = fetch('products.json')
@@ -20,6 +22,8 @@ const productsPromise = fetch('products.json')
       <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
         <DigitalTools productsPromise={productsPromise}></DigitalTools>
       </Suspense>
+      <GetStarted></GetStarted>
+      <Pricing></Pricing>
      </div>
      <ToastContainer></ToastContainer>
     </>
