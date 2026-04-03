@@ -7,6 +7,8 @@ import DigitalTools from './Components/DigitalTools/DigitalTools'
 import { Suspense } from 'react'
 import GetStarted from './Components/GetStarted/GetStarted'
 import Pricing from './Components/Pricing/Pricing'
+import Transform from './Components/Transform/Transform'
+import Footer from './Components/Footer/Footer'
 
 function App() {
 const productsPromise = fetch('products.json')
@@ -25,6 +27,8 @@ const productsPromise = fetch('products.json')
       <GetStarted></GetStarted>
       <Pricing></Pricing>
      </div>
+     <Transform></Transform>
+     <Footer></Footer>
      <ToastContainer></ToastContainer>
     </>
   )
