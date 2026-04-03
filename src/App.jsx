@@ -7,7 +7,7 @@ import DigitalTools from './Components/DigitalTools/DigitalTools'
 import { Suspense } from 'react'
 
 function App() {
-const productsPromise = fetch('/public/products.json')
+const productsPromise = fetch('products.json')
 .then(res=> res.json())
   return (
     <>

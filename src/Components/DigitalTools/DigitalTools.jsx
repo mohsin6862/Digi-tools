@@ -1,4 +1,5 @@
 import React, { use } from 'react';
+import ProductCard from '../ProductCard/ProductCard';
 
 const DigitalTools = ({productsPromise}) => {
     const products = use(productsPromise)
@@ -13,6 +14,12 @@ const DigitalTools = ({productsPromise}) => {
                     <button className='btn font-bold rounded-3xl text-xl'>Cart</button>
                 </div> 
             </div>
+           <div  className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-20 justify-items-center'>
+             {
+                products.map(product => <ProductCard   product={product}></ProductCard>)
+            }
+           </div>
+    
         </div>
     );
 };
