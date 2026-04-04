@@ -1,9 +1,15 @@
 import React from "react";
+import { toast } from "react-toastify";
 
-const ProductCard = ({ product }) => {
-  console.log(product);
+const ProductCard = ({ product,cart,setCart }) => {
+  // console.log(product);
   const { name, price, description, period, tag, tagType, features, icon } =
     product;
+    const handleBuyNow =(product)=>{
+      // console.log("BuyNow Button clicked",product)
+      setCart([...cart,product])
+      toast.success(`${product.name} is successfully added to cart`)
+    }
   return (
     <div>
       <div className="card w-96 bg-base-100 shadow-sm relative">
@@ -54,7 +60,7 @@ const ProductCard = ({ product }) => {
   ))}
           </ul>
           <div className="mt-6">
-            <button className="btn btn-primary btn-block rounded-3xl font-bold text-lg">Buy Now</button>
+            <button onClick={()=>{handleBuyNow(product)}} className="btn btn-primary btn-block rounded-3xl font-bold text-lg">Buy Now</button>
           </div>
         </div>
       </div>

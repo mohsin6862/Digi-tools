@@ -3,7 +3,7 @@ import bannerImg from '../../assets/products/banner.png'
 import circleImg from '../../assets/products/Rectangle 4.png'
 const Banner = () => {
   return (
-    <div className="my-20 md:flex  items-center justify-around">
+    <div className="my-20 md:flex justify-items-center  items-center justify-around">
       <div className="banner-info space-y-5 mb-10 md:mb-0">
         <div className="bg-[#E1E7FF] p-2 rounded-4xl max-w-74 mx-auto lg:mx-0 flex gap-2 items-center">
             <img className="h-2 w-2" src={circleImg} alt="" />
