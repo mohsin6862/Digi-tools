@@ -1,9 +1,9 @@
 import React from 'react';
 import { FaShoppingCart } from 'react-icons/fa';
 
-const Navbar = () => {
+const Navbar = ({cart}) => {
     return (
-         <div className="navbar bg-base-100 shadow-sm ">
+         <div className="navbar bg-base-100 shadow-sm fixed top-0 left-0 w-full z-50">
   <div className="navbar-start ">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -31,8 +31,21 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end space-x-5">
-    <FaShoppingCart></FaShoppingCart>
-     <a>Log In</a>
+    <div className="relative cursor-pointer">
+
+                    <FaShoppingCart className="text-2xl" />
+
+                    {/* Badge */}
+                    {
+                        cart.length > 0 && (
+                            <span className="absolute -top-2 -right-2 bg-error text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+                                {cart.length}
+                            </span>
+                        )
+                    }
+
+                </div>
+     <a>Log In </a>
     <a className="btn btn-primary rounded-3xl">Get Started</a>
   </div>
 </div>

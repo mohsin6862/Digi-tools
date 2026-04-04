@@ -1,6 +1,7 @@
 import React from "react";
 import bannerImg from '../../assets/products/banner.png'
 import circleImg from '../../assets/products/Rectangle 4.png'
+import { FaVideo } from "react-icons/fa";
 const Banner = () => {
   return (
     <div className="my-20 md:flex justify-items-center  items-center justify-around">
@@ -19,7 +20,7 @@ const Banner = () => {
         </p>
         <div className="space-x-4 text-center lg:text-left">
             <button className="btn btn-primary rounded-3xl">Explore Products</button>
-            <button className="btn btn-outline btn-info rounded-3xl">Watch Demo</button>
+            <button className="btn btn-outline btn-info rounded-3xl"><FaVideo></FaVideo> Watch Demo</button>
         </div>
       </div>
 

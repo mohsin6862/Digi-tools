@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebook } from 'react-icons/fa';
+import { toast } from 'react-toastify';
 
 const Cart = ({ cart, setCart }) => {
 
@@ -7,8 +8,17 @@ const Cart = ({ cart, setCart }) => {
 
     const handleRemove = (id) => {
         const remaining = cart.filter(item => item.id !== id);
+        toast.warn("Removed Successfully")
         setCart(remaining);
     };
+    const handleCheckOut =()=>{
+        if(cart.length==0){
+            toast.error('Your Cart is Empty')
+            return
+        }
+        setCart([]);
+        toast("Thanks for your Purchase")
+    }
 
     return (
         <div className='border border-[rgb(246,246,246)] p-10 bg-base-200 my-20 rounded-2xl'>
@@ -52,7 +62,7 @@ const Cart = ({ cart, setCart }) => {
                 <h3 className='font-bold text-xl'>${total}</h3>
             </div>
 
-            <button className='btn btn-primary w-full rounded-3xl mt-4'>
+            <button onClick={()=>{handleCheckOut()}} className='btn btn-primary w-full rounded-3xl mt-4'>
                 Proceed to Checkout
             </button>
 
