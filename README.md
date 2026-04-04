@@ -4,9 +4,6 @@
 
 This is a digital tools buying platform. Where user can buy different kinds of tools as their needs. This is the easiest platform to purchase powerful tools.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
 ## Technology Used :
 
 React, JavaScript, Tailwind CSS, DaisyUi, React Icon, Toastify, UseState, Use, Json Data, etc...
